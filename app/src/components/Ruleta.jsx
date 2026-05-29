@@ -206,7 +206,7 @@ export default function Ruleta({ onIconSelected, disabled }) {
             const { x, y } = polar(R_ICON_CENTER, angleDeg);
             return (
               <image key={idx}
-                href={`/images/${image.imageName}.png`}
+                href={`${import.meta.env.BASE_URL}images/${image.imageName}.png`}
                 x={x - ICON_SIZE / 2}
                 y={y - ICON_SIZE / 2}
                 width={ICON_SIZE}
@@ -257,7 +257,7 @@ export default function Ruleta({ onIconSelected, disabled }) {
 
         {/* Logo fijo — fuera del SVG que gira */}
         <img
-          src="/Logo.png"
+          src={`${import.meta.env.BASE_URL}Logo.png`}
           alt="Logo"
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
           style={{ width: 144, height: 144, objectFit: "contain", zIndex: 5 }}

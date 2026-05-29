@@ -19,7 +19,7 @@ export default function ImageCard({ image, segmentLabel, onStart }) {
         <div className="mx-8 rounded-2xl overflow-hidden my-6"
           style={{ aspectRatio: "4/3", background: "rgba(26,157,196,0.08)", border: "1px solid rgba(26,157,196,0.2)" }}>
           <img
-            src={`/images/${image.imageName}.png`}
+            src={`${import.meta.env.BASE_URL}images/${image.imageName}.png`}
             alt={image.nombre}
             className="w-full h-full object-contain"
             onError={(e) => {
