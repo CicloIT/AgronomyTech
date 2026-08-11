@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 
-const TIMER_SEC = 15;
+const TIMER_SEC = 20;
 const LETTERS = ["A", "B", "C"];
 
 export default function QuizModal({ image, onFinish }) {
